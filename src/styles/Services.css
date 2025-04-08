@@ -1,0 +1,241 @@
+.services-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.services-card {
+    width: fit-content;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.services-card:hover {
+    box-shadow: inset 6px 6px 30px rgb(75, 75, 75);
+    border: none;
+}
+
+.services-icon {
+    font-size: 3rem;
+    color: var(--nav-blue);
+    margin-bottom: 2rem;
+}
+
+.services-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.services-desc {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .services-card {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .services-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .services-title {
+        font-size: 1.2rem;
+    }
+    
+    .services-desc {
+        font-size: .7rem;
+    }
+    .cert-card {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-image {
+  transform: scale(1.05);
+  filter: blur(2px) brightness(0.6);
+}
+
+.cert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+}
+
+.cert-card:hover .cert-overlay {
+  opacity: 1;
+}
+
+.cert-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cert-desc {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  color: #aaffc3;
+  margin-bottom: 10px;
+}
+
+.verify-button {
+  background-color: #6c2bd9;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verify-button:hover {
+  background-color: #531bc7;
+}
+
+}
+.cert-card {
+    position: relative;
+    width: 220px;               /* Reduced width */
+    height: 280px;              /* Reduced height */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cert-image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;          /* Ensures the image covers the card without stretching */
+    transition: transform 0.5s ease;
+    border-radius: 12px;
+  }
+  
+  .cert-card:hover .cert-image {
+    transform: scale(1.05);
+    filter: blur(2px) brightness(0.6);
+  }
+  
+  .cert-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 12px;
+  }
+  
+  .cert-card:hover .cert-overlay {
+    opacity: 1;
+  }
+  
+  .cert-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  .cert-desc {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .cert-issuer {
+    font-size: 11px;
+    color: #aaffc3;
+    margin-bottom: 10px;
+  }
+  
+  .verify-button {
+    background-color: #6c2bd9;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-button:hover {
+    background-color: #531bc7;
+  }
+  .services-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  .services-card {
+    width: 260px;         /* reduced width */
+    height: 300px;        /* reduced height */
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #e5e4e2;
+    transition: transform 0.3s ease;
+  }
+  
+  .services-card:hover {
+    transform: scale(1.05);
+  } 
+    
